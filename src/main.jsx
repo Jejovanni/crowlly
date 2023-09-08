@@ -1,14 +1,14 @@
 import React from 'react'
+import App from './App.jsx'
+import './index.css'
+import Register from './Register.jsx';
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { initializeApp } from 'firebase/app';
-import App from './App.jsx'
-import './index.css'
 import Dashboard from './Dashboard.jsx'
 import Signup from './Signup.jsx'
 import About from './About.jsx'
 import { collection, getDocs, getFirestore } from "firebase/firestore";
-import Register from './Register.jsx';
 
 const firebaseConfig = {
   apiKey: "AIzaSyA6h4sMpNPjr51nv6mVT8kcE4wblXPWm0o",
