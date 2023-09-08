@@ -20,14 +20,14 @@ function App() {
           <div className=' items-center hidden lg:flex justify-between max-w-[76em]'>
             <div >
               <ul className=' flex'>
-                <li className=' p-4 '> <Link href="/dashboard"> Dashboard</Link></li>
-                <li className=' p-4'> <Link href="/about"> About</Link></li>
+                <li className=' p-4 '> <Link to="/dashboard"> Dashboard</Link></li>
+                <li className=' p-4'> <Link to="/about"> About</Link></li>
               </ul>
             </div>
             <div>
               <ul className=' flex'>
-                <li className=' p-4'> <button className=' bg-fuchsia-600 hover:bg-fuchsia-600 bg-opacity-60 rounded-lg min-w-[10.5rem] min-h-[3.5rem]'> <a href="/signup"> Login</a></button></li>
-                <li className=' p-4'> <button className=' bg-fuchsia-600 hover:bg-fuchsia-500 rounded-lg min-w-[10.5rem] min-h-[3.5rem]'> <a href="/register">Get started</a></button></li>
+                <li className=' p-4'> <button className=' bg-fuchsia-600 hover:bg-fuchsia-600 bg-opacity-60 rounded-lg min-w-[10.5rem] min-h-[3.5rem]'> <Link to="/signup"> Login</Link></button></li>
+                <li className=' p-4'> <button className=' bg-fuchsia-600 hover:bg-fuchsia-500 rounded-lg min-w-[10.5rem] min-h-[3.5rem]'> <Link to="/register">Get started</Link></button></li>
               </ul>
             </div>
           </div>
@@ -40,14 +40,14 @@ function App() {
           <div className={!nav ? 'flex flex-col fixed left-0 top-0 min-h-[100vh] w-[75%] border-r-gray-500 bg-zinc-950 justify-between items-center ease-in-out duration-500  ' : 'fixed left-[-100%]'}  >
             <div >
               <ul className=' flex flex-col p-7'>
-                <li className=' p-4'> <a href="/dashboard"> Dashboard</a></li>
-                <li className=' p-4 '> <a href="/about"> About</a></li>
+                <li className=' p-4'> <Link to="/dashboard"> Dashboard</Link></li>
+                <li className=' p-4 '> <Link to="/about"> About</Link></li>
               </ul>
             </div>
             <div>
               <ul className=' flex flex-col'>
-                <li className=' p-4'> <button className=' bg-fuchsia-600 hover:bg-fuchsia-600 bg-opacity-60 rounded-lg min-w-[10.5rem] min-h-[3.5rem]'> <Link href="/login"> Login</Link></button></li>
-                <li className=' p-4'> <button className=' bg-fuchsia-600 hover:bg-fuchsia-500 rounded-lg min-w-[10.5rem] min-h-[3.5rem]'> <Link href="/register">Get started</Link></button></li>
+                <li className=' p-4'> <button className=' bg-fuchsia-600 hover:bg-fuchsia-600 bg-opacity-60 rounded-lg min-w-[10.5rem] min-h-[3.5rem]'> <Link to="/login"> Login</Link></button></li>
+                <li className=' p-4'> <button className=' bg-fuchsia-600 hover:bg-fuchsia-500 rounded-lg min-w-[10.5rem] min-h-[3.5rem]'> <Link to="/register">Get started</Link></button></li>
               </ul>
             </div>
 
