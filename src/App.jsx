@@ -15,7 +15,7 @@ function App() {
       <div class="bg-black  " >
         <nav className=' flex justify-between px-4 mx-auto max-w-[1640px] h-28 items-center text-2xl text-white ' >
 
-          <Link href="/" alt="Crowlly logo" className='logo'> crowlly </Link>
+          <Link to="/" alt="Crowlly logo" className='logo'> crowlly </Link>
 
           <div className=' items-center hidden lg:flex justify-between max-w-[76em]'>
             <div >
