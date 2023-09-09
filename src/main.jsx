@@ -11,7 +11,7 @@ import Signup from './Signup.jsx'
 import About from './About.jsx'
 import Register from './Register.jsx';
 //Layouts
-import RootLayouts from './layouts/RootLayouts.jsx';
+// import RootLayouts from './layouts/RootLayouts.jsx';
 import { initializeApp } from 'firebase/app';
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 
@@ -49,7 +49,8 @@ getDocs(colRef)
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<RootLayouts />} >
+    //path='/' element={<RootLayouts />} 
+    <Route >
       <Route path="/" element={<App />} />  {/* Home */}
       <Route path='/about' element={<About />} />
       <Route path='/signup' elemenet={<Signup />} />
