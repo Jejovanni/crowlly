@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { Button } from '@mui/material'
 import { Link } from 'react-router-dom'
-import './App.css'
 
 function App() {
   const [nav, setNav] = useState(true)
