@@ -1,13 +1,18 @@
 import React from 'react'
-import App from './App.jsx'
-import './index.css'
-import Register from './Register.jsx';
-import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom'
-import { initializeApp } from 'firebase/app';
+
+import ReactDOM from 'react-dom/client'
+import './index.css'
+// Pages
+import App from './App.jsx'
+import Home from './Home'
 import Dashboard from './Dashboard.jsx'
 import Signup from './Signup.jsx'
 import About from './About.jsx'
+import Register from './Register.jsx';
+//Layouts
+import RootLayouts from './layouts/RootLayouts.jsx';
+import { initializeApp } from 'firebase/app';
 import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -44,11 +49,12 @@ getDocs(colRef)
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route>
+    <Route path='/' element={<RootLayouts />} >
       <Route path="/" element={<App />} />  {/* Home */}
-      <Route path='/signup' elemenet={<Signup/>} />
-      <Route exact path="/register" element={<Register/>} />
-      <Route path='/dashboard' element={<Dashboard/>} />
+      <Route path='/about' element={<About />} />
+      <Route path='/signup' elemenet={<Signup />} />
+      <Route exact path="/register" element={<Register />} />
+      <Route path='/dashboard' element={<Dashboard />} />
     </Route>
     // [
     //   {
@@ -76,7 +82,7 @@ const router = createBrowserRouter(
     //     element: <Login />,
     //   },
     // ]
-    ));
+  ));
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
