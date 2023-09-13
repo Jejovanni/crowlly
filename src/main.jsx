@@ -49,7 +49,7 @@ getDocs(colRef)
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    //path='/' element={<RootLayouts />} 
+    
     <Route >
       <Route path="/" element={<App />} />  {/* Home */}
       <Route path='/about' element={<About />} />

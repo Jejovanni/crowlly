@@ -5,9 +5,11 @@ import { AccountBalanceWalletRounded, AccountCircle, Home, Logout, Person, Perso
 
 function Sidebar() {
     return (
-        <div className='text-2xl hidden md:block md:min-w-[14%]'>
-            <Link href="/" alt="Crowlly logo" className='logo lg:text-4xl'> crowlly </Link>
-            <div className=' flex flex-col'>
+        <div className='text-2xl hidden md:block md:min-w-[14%] border-r-2 border-neutral-400 p-4 '>
+            <div className='flex justify-center'>
+            <Link href="/" alt="Crowlly logo" className='logo lg:text-4xl '> crowlly </Link>
+            </div>
+            <div className=' flex flex-col justify-center items-center'>
                 <div className=' flex flex-col md:mt-[10rem]'>
                 <Link to="/dashboard"> <Home/> Home</Link>
                 <Link> <AccountBalanceWalletRounded/> Balances</Link>
