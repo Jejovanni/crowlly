@@ -24,8 +24,8 @@ function Dashboard() {
           <MoreHorizRounded sx={{ color: 'white' }} />
 
         </div>
-        <div className=' flex min-h-[15vh] border-b border-gray-100 justify-start items-center '>
-          <h2 className=' text-4xl font-semibold'> <span className=' text-neutral-400 text-base'>{'\u20A6'}</span> 400,000 <span className=' text-neutral-400 text-base'>.00</span> </h2>
+        <div className=' flex min-h-[15vh] border-b border-gray-100 justify-center items-center '>
+          <h2 className=' text-4xl lg font-semibold'> <span className=' text-neutral-400 text-base'>{'\u20A6'}</span> 400,000 <span className=' text-neutral-400 text-base'>.00</span> </h2>
         </div>
         <div className=' flex justify-between pt-4 pb-4'>
           <span className=' text-sm lg:text-xl'> <AddCircleSharp sx={{ color: 'white' }} /> Top-up </span>
@@ -57,7 +57,7 @@ function Dashboard() {
         <div className=' flex flex-col rounded-md'>
           <div className=' flex pt-4 min-h-full'>
             <div>
-              <GroupAddSharp sx={{ color: 'white' }}/>
+              <GroupAddSharp sx={{ color: 'white' }} />
             </div>
 
             <div className=' flex pl-2'>

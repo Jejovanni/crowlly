@@ -9,7 +9,8 @@ export default {
       backgroundImage: {
         'hero-pattern': "url('/low-poly-grid-haikei.svg')",
         'hero-mobile': "url('/low-poly-grid-haikei-mobile.svg') ",
-        'register-pattern': "url('/low-poly-grid-haikei-register.svg')"
+        'register-pattern': "url('/low-poly-grid-haikei-register.svg')",
+        'section-pattern': "url('/low-poly-section.svg')"
       }
     },
   },

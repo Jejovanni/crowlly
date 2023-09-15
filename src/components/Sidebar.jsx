@@ -10,11 +10,11 @@ function Sidebar() {
             <Link href="/" alt="Crowlly logo" className='logo lg:text-4xl '> crowlly </Link>
             </div>
             <div className=' flex flex-col justify-center items-center'>
-                <div className=' flex flex-col md:mt-[10rem]'>
+                <div className=' flex flex-col md:mt-[8rem]'>
                 <Link to="/dashboard"> <Home/> Home</Link>
                 <Link> <AccountBalanceWalletRounded/> Balances</Link>
                 </div>
-                <div className=' flex flex-col md:mt-[45rem] justify-center' >
+                <div className=' flex flex-col md:mt-[35rem] justify-center' >
                 <Link> <Person/> Profile</Link>
                 <Link> <Logout/> Logout</Link>
                 <Link> <AccountCircle/> User 1</Link>
