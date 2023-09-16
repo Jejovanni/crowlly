@@ -6,6 +6,7 @@ import './index.css'
 // Pages
 import App from './App.jsx'
 import Home from './Home'
+import Login from './Login.jsx'
 import Dashboard from './Dashboard.jsx'
 import Signup from './Signup.jsx'
 import About from './About.jsx'
@@ -53,7 +54,8 @@ const router = createBrowserRouter(
     <Route >
       <Route path="/" element={<App />} />  {/* Home */}
       <Route path='/about' element={<About />} />
-      <Route path='/signup' elemenet={<Signup />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/signup' element={<Signup />} />
       <Route exact path="/register" element={<Register />} />
       <Route path='/dashboard' element={<Dashboard />} />
     </Route>

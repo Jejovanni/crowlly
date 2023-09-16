@@ -25,7 +25,7 @@ function Nav() {
                   </div>
                   <div>
                       <ul className=' flex'>
-                          <li className=' p-4'> <button className=' bg-fuchsia-600 hover:bg-fuchsia-600 bg-opacity-60 rounded-lg min-w-[10.5rem] min-h-[3.5rem]'> <Link to="/signup"> Login</Link></button></li>
+                          <li className=' p-4'><Link to="/login"> <button className=' bg-fuchsia-600 hover:bg-fuchsia-600 bg-opacity-60 rounded-lg min-w-[10.5rem] min-h-[3.5rem]'>  Login</button></Link></li>
                           <li className=' p-4'> <button className=' bg-fuchsia-600 hover:bg-fuchsia-500 rounded-lg min-w-[10.5rem] min-h-[3.5rem]'> <Link to="/register">Get started</Link></button></li>
                       </ul>
                   </div>

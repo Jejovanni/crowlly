@@ -8,7 +8,7 @@ function Signup() {
       <div className=''>
 
         <h1 className=' text-center text-xl md:text-3xl lg:text-4xl '> Create your Crowlly account</h1>
-        <p className=' text-center text-sm md:text-lg lg:text-xl '> Already have an account? <Link className=' underline underline-offset-4 hover:bg-slate-50'> Log in</Link></p>
+        <p className=' text-center text-sm md:text-lg lg:text-xl '> Already have an account? <Link to={'/login'} className=' underline underline-offset-4 hover:bg-slate-50'> Log in</Link></p>
         <div className=' flex flex-col pt-4 pb-4'>
           <label htmlFor="email" className=' text-base md:text-lg text-left lg:pb-1'> First enter your email address</label>
           <input type="email" name="email" id="" className=' rounded-sm md:min-w-[30rem] lg:min-w-[45rem] md:text-xl min-h-[2.5rem] md:min-h-[3rem] ' />

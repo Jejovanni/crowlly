@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { ArrowPathIcon, LockClosedIcon, WalletIcon, UserGroupIcon } from '@heroicons/react/24/outline'
 
 const features = [
@@ -52,11 +53,13 @@ function Home() {
 
       <div className=' min-h-screen flex flex-col justify-center items-start md:items-center bg-hero-pattern bg-center bg-no-repeat bg-cover lazy ' >
         <div className='max-w-5xl lg:max-w-7xl'>
-        <h1 className=' text-white text-3xl text-left md:text-center font-semibold md:text-4xl  p-4 '>Secure Escrow</h1>
-        <h3 className='text-white text-5xl text-left md:text-center  md:text-6xl lg:text-8xl lg:mx-10 tracking-tighter font-medium p-4  ' >Your trusted escrow solution for safe and fair transactions.</h3>
+          <h1 className=' text-white text-3xl text-left md:text-center font-semibold tracking-tighter md:text-4xl p-4 '>Secure Escrow</h1>
+          <h3 className='text-white text-5xl text-left md:text-center  md:text-6xl lg:text-8xl lg:mx-10 tracking-tight font-bold p-4  ' >Your trusted escrow solution for safe and fair transactions.</h3>
         </div>
-        <div className=' bg-[#22be1c] font-bold p-5 mx-5 justify-center text-2xl min-w-[150px] flex  rounded-xl '>Get Started</div>
-        
+        <Link to={'/signup'}>
+        <button className=' bg-[#22be1c] font-bold p-5 mx-5 justify-center text-2xl min-w-[150px] flex  rounded-xl '>Get Started</button>
+        </Link>
+
       </div>
 
       <div className=" py-24 sm:py-32">
@@ -104,14 +107,16 @@ export default function Example() {
  */}
       <div className="min-h-[80vh] flex flex-col justify-center items-center bg-section-pattern bg-cover">
         <div className='max-w-5xl lg:max-w-7xl'>
-        <h3 className='text-white text-5xl text-center  md:text-6xl lg:text-8xl  tracking-tight font-medium p-4 lg:mx-40 '> A seamless and transparent escrow service</h3>
+          <h3 className='text-white text-5xl text-center  md:text-6xl lg:text-8xl  tracking-tight font-bold p-4 lg:mx-40 '> A seamless and transparent escrow service</h3>
         </div>
       </div>
       <div className="min-h-[80vh] flex flex-col justify-center items-center">
         <div className='max-w-5xl lg:max-w-7xl'>
-        <h3 className='text-white text-5xl text-center  md:text-6xl lg:text-8xl  tracking-tight font-medium p-4 lg:mx-40 '>Safe and fair financial transactions.</h3>
+          <h3 className='text-white text-5xl text-center  md:text-6xl lg:text-8xl  tracking-tight font-bold p-4 lg:mx-40 '>Safe and fair financial transactions.</h3>
         </div>
-        <button className=' bg-[#22be1c] font-bold p-5 mx-5 justify-center text-2xl min-w-[150px] flex  rounded-xl '>Get Started</button>
+        <Link to={'/signup'}>
+          <button className=' bg-[#22be1c] font-bold p-5 mx-5 justify-center text-2xl min-w-[150px] flex  rounded-xl '>Get Started</button>
+        </Link>
       </div>
 
     </div>
