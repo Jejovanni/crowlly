@@ -6,25 +6,25 @@ const features = [
   {
     name: 'Secure Wallet',
     description:
-      'Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.',
+      'Multi-factor authentication (MFA) to ensure that only authorized users can access their funds. Your account is protected by a combination of something you know and something you have, making it nearly impenetrable.',
     icon: WalletIcon,
   },
   {
     name: 'Group transactions',
     description:
-      'Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.',
+      `Harnesses the power of collective action. Whether you're pooling funds for a shared dream, managing a group savings account, or engaging in friendly wagers with friends, Crowlly ensures that everyone's contributions are secure and accounted for.`,
     icon: UserGroupIcon,
   },
   {
     name: 'Send and Receive',
     description:
-      'Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.',
+      `There's no need to wait around for funds to clear. Say goodbye to traditional delays; our lightning-fast transfers ensure that your money moves as quickly as your ambitions.`,
     icon: ArrowPathIcon,
   },
   {
     name: 'Advanced security',
     description:
-      'Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.',
+      `Security is our top priority. We employ robust encryption techniques and follow industry-best security practices to safeguard your funds. Your money is stored in a highly secure environment, giving you the confidence that it's in safe hands.`,
     icon: LockClosedIcon,
   },
 ]
@@ -70,8 +70,7 @@ function Home() {
               Crowlly is a secure and reliable solution for transactions involving multiple parties
             </p>
             <p className="mt-6 text-lg lg:text-2xl leading-8 text-white">
-              Quis tellus eget adipiscing convallis sit sit eget aliquet quis. Suspendisse eget egestas a elementum
-              pulvinar et feugiat blandit at. In mi viverra elit nunc.
+              We understand the complexity and importance of these dealings, and that's why we go above and beyond to ensure they're as secure and reliable as possible.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-5xl">
@@ -84,7 +83,7 @@ function Home() {
                     </div>
                     {feature.name}
                   </dt>
-                  <dd className="mt-2 text-base leading-7 text-white">{feature.description}</dd>
+                  <dd className="mt-2 text-base lg:text-xl leading-7 text-white">{feature.description}</dd>
                 </div>
               ))}
             </dl>
