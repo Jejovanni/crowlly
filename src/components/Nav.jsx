@@ -36,7 +36,7 @@ function Nav() {
 
               </div>
 
-              <div className={!nav ? 'flex flex-col fixed left-0 top-0 min-h-[100vh] w-[75%] border-r-gray-500 bg-zinc-950 justify-between items-center ease-in-out duration-500  ' : 'fixed left-[-100%]'}  >
+              <div className={!nav ? 'flex flex-col fixed z-10 left-0 top-0 min-h-[100vh] w-[75%] border-r-gray-500 bg-zinc-950 justify-between items-center ease-in-out duration-500  ' : 'fixed left-[-100%]'}  >
                   <div >
                       <ul className=' flex flex-col p-7'>
                           <li className=' p-4'> <NavLink to="/dashboard"> Dashboard</NavLink></li>
