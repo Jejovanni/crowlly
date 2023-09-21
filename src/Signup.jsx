@@ -11,8 +11,8 @@ function Signup() {
         <p className=' text-center text-sm md:text-lg lg:text-xl '> Already have an account? <Link to={'/login'} className=' underline underline-offset-4 hover:bg-slate-50'> Log in</Link></p>
         <div className=' flex flex-col pt-4 pb-4'>
           <label htmlFor="email" className=' text-base md:text-lg text-left lg:pb-1'> First enter your email address</label>
-          <input type="email" name="email" id="" className=' rounded-sm md:min-w-[30rem] lg:min-w-[45rem] md:text-xl min-h-[2.5rem] md:min-h-[3rem] ' />
-          <input type="submit" value="Next" className='rounded-3xl min-w-[10rem] md:min-w-[30rem] bg-[#22be1c] min-h-[2.5rem] md:min-h-[3rem] md:text-xl mt-4' />
+          <input type="email" name="email" id="" placeholder='Enter your email address' className=' rounded-md md:min-w-[30rem] lg:min-w-[45rem] md:text-xl h-[3.125rem] ' />
+          <input type="submit" value="Next" className='rounded-3xl min-w-[10rem] md:min-w-[30rem] bg-[#22be1c] h-[3.125rem] md:text-xl mt-4' />
         </div>
         <p className=' text-sm lg:text-xl text-left pb-4'> or log in with</p>
         <div className=' flex justify-between items-center pb-4'>
