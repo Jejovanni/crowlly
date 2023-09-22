@@ -5,7 +5,7 @@ import { AccountBalanceWalletRounded, AccountCircle, Home, Logout, Person, Perso
 
 function Sidebar() {
     return (
-        <div className='text-2xl hidden md:block md:min-w-[14%] border-r-2 border-neutral-400 p-4 '>
+        <div className='text-2xl hidden md:flex md:flex-col md:min-w-[14%] border-r-2 border-x-neutral-50 justify-center '>
             <div className='flex justify-center'>
             <Link href="/" alt="Crowlly logo" className='logo lg:text-4xl '> crowlly </Link>
             </div>
